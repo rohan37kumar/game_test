@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\destroying.cs" />
     <Compile Include="Assets\Scripts\followSKY.cs" />
     <Compile Include="Assets\Scripts\Camera_Control.cs" />
+    <Compile Include="Assets\Scripts\smoothControls.cs" />
     <Compile Include="Assets\Scripts\followLAND.cs" />
     <Compile Include="Assets\Scripts\Vehicle_Controller.cs" />
   </ItemGroup>
@@ -764,6 +765,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="SimpleInput.Runtime.csproj">
+      <Project>{FD5A880F-92DD-38F0-3906-C6B876A5017B}</Project>
+      <Name>SimpleInput.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleInput.Editor.csproj">
+      <Project>{D3EE2C01-7A69-91A6-C26D-F34022F5E6DB}</Project>
+      <Name>SimpleInput.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
